@@ -1,0 +1,55 @@
+Part 2: More SQL (Including aggregates)
+Complete the following code SQL challenges on Codewars:
+
+SQL Basics: Simple WHERE and ORDER BY
+
+SELECT * 
+FROM people 
+WHERE age > 50 
+ORDER BY age DESC;
+
+
+
+SQL Basics: Simple SUM
+
+SELECT SUM(age) AS age_sum 
+FROM people;
+
+
+
+SQL Basics: Simple MIN / MAX
+
+SELECT SUM(age) AS age_sum 
+FROM people;
+
+
+
+Find all active students
+
+SELECT Id, FirstName, LastName 
+FROM students 
+WHERE IsActive = 1;
+
+
+
+SQL Basics: Simple GROUP BY
+
+SELECT age, 
+       COUNT(id) AS people_count 
+FROM people 
+GROUP BY age;
+
+
+
+SQL Basics: Simple HAVING
+
+SELECT age, 
+       COUNT(id) AS total_people 
+FROM people 
+GROUP BY age
+HAVING COUNT(id) >= 10;
+
+
+
+
+
